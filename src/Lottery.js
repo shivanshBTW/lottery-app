@@ -16,7 +16,6 @@ export default class Lottery extends Component {
     }
     this.state = { nums: [...arr] };
     this.numGen = this.numGen.bind(this);
-    this.printer = this.printer.bind(this);
   }
   randGen = () => Math.floor(Math.random() * this.props.maxNum) + 1;
 
@@ -26,14 +25,12 @@ export default class Lottery extends Component {
       arr.push(this.randGen());
     }
     // console.log(arr);
-    this.setState({ nums: [...arr] });
+    this.setState({ ...this.state, nums: [...arr] });
     // console.log(this.state);
   }
 
-  printer() {}
   render() {
     var numArray = this.state.nums;
-
     return (
       <div className="lottery">
         <h2>{this.props.title}</h2>
