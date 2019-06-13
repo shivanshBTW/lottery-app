@@ -1,0 +1,23 @@
+.lottery {
+  border: 1px solid black;
+  /* padding-top: 20px; */
+  /* padding-bottom: 40px; */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.lottery button {
+  margin: 20px;
+  height: 35px;
+  width: 75px;
+  background-color: #7878f3;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.lottery button:hover {
+  background-color: darkblue;
+}

@@ -1,0 +1,12 @@
+.Ball {
+  background-color: rgb(206, 78, 78);
+  border-radius: 100%;
+  display: inline-block;
+  border: 13px solid rgb(206, 78, 78);
+  color: white;
+  font-size: 28px;
+  margin: 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
